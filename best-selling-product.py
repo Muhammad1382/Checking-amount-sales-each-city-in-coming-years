@@ -2,7 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df =  pd.read_csv (r"C:\Users\Ertebat\Desktop\project python\Sales data.csv")
+df =  pd.read_csv ("Sales data.csv")
 
 product_counts = df['Product'].value_counts()
 
@@ -18,4 +18,5 @@ plt.ylabel("Number of Sales")
 plt.xlabel("Product")
 plt.title("Products Sold")
 plt.tight_layout()
+
 plt.show()
